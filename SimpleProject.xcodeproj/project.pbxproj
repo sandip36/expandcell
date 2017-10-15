@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2F69E94C1F933FED00FF8E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E94B1F933FED00FF8E02 /* AppDelegate.swift */; };
-		2F69E94E1F933FED00FF8E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E94D1F933FED00FF8E02 /* ViewController.swift */; };
 		2F69E9511F933FED00FF8E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69E94F1F933FED00FF8E02 /* Main.storyboard */; };
 		2F69E9531F933FED00FF8E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F69E9521F933FED00FF8E02 /* Assets.xcassets */; };
 		2F69E9561F933FED00FF8E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69E9541F933FED00FF8E02 /* LaunchScreen.storyboard */; };
 		2F69E9611F933FED00FF8E02 /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E9601F933FED00FF8E02 /* SimpleProjectTests.swift */; };
 		2F69E96C1F933FED00FF8E02 /* SimpleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E96B1F933FED00FF8E02 /* SimpleProjectUITests.swift */; };
+		2F69E97E1F9340A600FF8E02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E97D1F9340A600FF8E02 /* HomeVC.swift */; };
+		2F69E9811F9340C200FF8E02 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E97F1F9340C200FF8E02 /* MenuCell.swift */; };
+		2F69E9821F9340C200FF8E02 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F69E9801F9340C200FF8E02 /* MenuCell.xib */; };
+		2F69E9851F9340DB00FF8E02 /* MenuDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E9831F9340DB00FF8E02 /* MenuDataCell.swift */; };
+		2F69E9861F9340DB00FF8E02 /* MenuDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F69E9841F9340DB00FF8E02 /* MenuDataCell.xib */; };
+		2F69E9891F9346A400FF8E02 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69E9881F9346A400FF8E02 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		2F69E9481F933FED00FF8E02 /* SimpleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F69E94B1F933FED00FF8E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F69E94D1F933FED00FF8E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F69E9501F933FED00FF8E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F69E9521F933FED00FF8E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F69E9551F933FED00FF8E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		2F69E9671F933FED00FF8E02 /* SimpleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F69E96B1F933FED00FF8E02 /* SimpleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectUITests.swift; sourceTree = "<group>"; };
 		2F69E96D1F933FED00FF8E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F69E97D1F9340A600FF8E02 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2F69E97F1F9340C200FF8E02 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		2F69E9801F9340C200FF8E02 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		2F69E9831F9340DB00FF8E02 /* MenuDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataCell.swift; sourceTree = "<group>"; };
+		2F69E9841F9340DB00FF8E02 /* MenuDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuDataCell.xib; sourceTree = "<group>"; };
+		2F69E9881F9346A400FF8E02 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +107,11 @@
 		2F69E94A1F933FED00FF8E02 /* SimpleProject */ = {
 			isa = PBXGroup;
 			children = (
-				2F69E94B1F933FED00FF8E02 /* AppDelegate.swift */,
-				2F69E94D1F933FED00FF8E02 /* ViewController.swift */,
-				2F69E94F1F933FED00FF8E02 /* Main.storyboard */,
-				2F69E9521F933FED00FF8E02 /* Assets.xcassets */,
-				2F69E9541F933FED00FF8E02 /* LaunchScreen.storyboard */,
+				2F69E9871F93467A00FF8E02 /* Extension */,
+				2F69E97C1F93406400FF8E02 /* StoryBoard */,
+				2F69E97B1F93405000FF8E02 /* ViewControllers */,
+				2F69E97A1F93403700FF8E02 /* AppDelegate */,
+				2F69E9791F93402600FF8E02 /* XibAndCell */,
 				2F69E9571F933FED00FF8E02 /* Info.plist */,
 			);
 			path = SimpleProject;
@@ -123,6 +133,51 @@
 				2F69E96D1F933FED00FF8E02 /* Info.plist */,
 			);
 			path = SimpleProjectUITests;
+			sourceTree = "<group>";
+		};
+		2F69E9791F93402600FF8E02 /* XibAndCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E97F1F9340C200FF8E02 /* MenuCell.swift */,
+				2F69E9801F9340C200FF8E02 /* MenuCell.xib */,
+				2F69E9831F9340DB00FF8E02 /* MenuDataCell.swift */,
+				2F69E9841F9340DB00FF8E02 /* MenuDataCell.xib */,
+			);
+			path = XibAndCell;
+			sourceTree = "<group>";
+		};
+		2F69E97A1F93403700FF8E02 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E94B1F933FED00FF8E02 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2F69E97B1F93405000FF8E02 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E97D1F9340A600FF8E02 /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F69E97C1F93406400FF8E02 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E9521F933FED00FF8E02 /* Assets.xcassets */,
+				2F69E9541F933FED00FF8E02 /* LaunchScreen.storyboard */,
+				2F69E94F1F933FED00FF8E02 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2F69E9871F93467A00FF8E02 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E9881F9346A400FF8E02 /* Reachability.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +289,8 @@
 			files = (
 				2F69E9561F933FED00FF8E02 /* LaunchScreen.storyboard in Resources */,
 				2F69E9531F933FED00FF8E02 /* Assets.xcassets in Resources */,
+				2F69E9821F9340C200FF8E02 /* MenuCell.xib in Resources */,
+				2F69E9861F9340DB00FF8E02 /* MenuDataCell.xib in Resources */,
 				2F69E9511F933FED00FF8E02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F69E94E1F933FED00FF8E02 /* ViewController.swift in Sources */,
+				2F69E9851F9340DB00FF8E02 /* MenuDataCell.swift in Sources */,
 				2F69E94C1F933FED00FF8E02 /* AppDelegate.swift in Sources */,
+				2F69E97E1F9340A600FF8E02 /* HomeVC.swift in Sources */,
+				2F69E9891F9346A400FF8E02 /* Reachability.swift in Sources */,
+				2F69E9811F9340C200FF8E02 /* MenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimpleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimpleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
