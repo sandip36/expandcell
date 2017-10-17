@@ -29,9 +29,22 @@ class HomeVC: UIViewController{
         self.tblViewHome.estimatedRowHeight = 20
         self.tblViewHome.rowHeight = UITableViewAutomaticDimension
         tblViewHome.tableFooterView = UIView()
+     let aa = val()
+       // let dddd = [11,12,13]
+       //print(aa)
+        let a = ["a", "b", "c"]
+        let b = ["d", "e", "f"]
+        
+        let res = [a, b].reduce([],+)
+        print(res)
         downloadDataFromService("http://trasquare.com/traveller_api/checktrawellersgatewayurl.php?action=getUserActivity&userId=85&publicId=1&page=1")
     }
-
+    func val() -> [Int]
+    {
+         let data = Singlotone.sharerdinstance
+        return data.callmethod()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -71,12 +84,12 @@ class HomeVC: UIViewController{
 
                             let crime = Sandip()
                             crime.cdid = obj["id"] as? String
-                          crime.date = obj["add_date"] as? String
+                            crime.date = obj["add_date"] as? String
                             crime.Discription = obj["activity_description"] as? String
                             crime.userImage = obj["userImage"] as? String
                              self.arrOfdata.append(crime)
                         }
-                        print(self.arrOfdata)
+                    //    print(self.arrOfdata)
                           DispatchQueue.main.async {
                 self.tblViewHome.reloadData()
                         }
@@ -129,9 +142,6 @@ extension HomeVC : UITableViewDelegate,UITableViewDataSource
         if clickedCellIndexes.contains(indexPath.row)
         {
             clickedCellIndexes.remove(indexPath.row)
-            
-           
-            
             isExpaneded = false
             
         }
@@ -167,7 +177,7 @@ extension HomeVC : UITableViewDelegate,UITableViewDataSource
             cella.discription.text = cellarr.Discription
             cella.cid.text = cellarr.cdid
             cella.date.text = cellarr.date
-            print(cellarr.userImage)
+           // print(cellarr.userImage)
             // async download
             cella.imgView.imageFromServerURL(urlString: cellarr.userImage!)
             
